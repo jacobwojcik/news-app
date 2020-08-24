@@ -3,7 +3,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { theme } from "../../utils/theme";
 
 const GlobalStyles = createGlobalStyle`
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"); */
 
 * {
   padding: 0;

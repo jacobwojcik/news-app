@@ -10,7 +10,7 @@ const RandomArticles = () => {
 
   const loadData = async () => {
     await fetch(
-      `http://newsapi.org/v2/top-headlines?country=us&pageSize=3&category=${news.newsType}&apiKey=2fbcc91b204d434fb09c1ed52893aaa0`
+      `https://newsapi.org/v2/top-headlines?country=us&pageSize=3&category=${news.newsType}&apiKey=2fbcc91b204d434fb09c1ed52893aaa0`
     )
       .then((res) => res.json())
       .then((receivedData) => setNews(receivedData["articles"]));
