@@ -1,6 +1,16 @@
 export const theme = {
   colors: {
-    primary: "rgb(240,240,240",
-    dark: "rgb(59, 57, 57)",
+    primary: "rgb(255, 255, 255)",
+    dark: "rgb(200,200,200)",
+    black: "black",
+  },
+  fonts: {
+    small: 16,
+    medium: 20,
+    large: 24,
+  },
+  media: {
+    phone: `@media (max-width:768px )`,
+    tablet: `@media (max-width:1024px),`,
   },
 };

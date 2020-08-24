@@ -1,21 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-const StyledHeader = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: white;
-  color: black;
-  padding: 1em 2em;
-  border-bottom: 1px solid rgb(200, 200, 200);
-`;
-const Navbar = styled.nav`
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-`;
+import { StyledHeader, Navbar } from "./styles";
 
 const Header = () => {
   return (
