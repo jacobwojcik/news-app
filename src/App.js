@@ -5,7 +5,7 @@ import RandomPage from "./pages/RandomPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Route path="/" exact component={Homepage} />
       <Route path="/random" component={RandomPage} />
     </Router>

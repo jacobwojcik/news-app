@@ -8,7 +8,7 @@ const Header = () => {
       <h1>News</h1>
       <Navbar>
         <li>
-          <Link to="">Our news</Link>
+          <Link to="/">Our news</Link>
         </li>
         <li>
           <Link to="/random">Random news</Link>
