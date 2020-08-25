@@ -1,6 +1,7 @@
 import React from "react";
 import {
   StyledFooter,
+  Outer,
   FooterDiv,
   StyledUl,
   StyledInput,
@@ -11,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <StyledFooter>
-      <div style={{ display: "flex" }}>
+      <Outer>
         <FooterDiv>
           <h1>Follow #us</h1>
           <StyledUl>
@@ -41,13 +42,13 @@ const Footer = () => {
         <FooterDiv>
           <h1>Newsletter</h1>
           <form>
-            <StyledInput placeholder="Please enter your email address here" />
+            <StyledInput placeholder="Please enter your email address" />
             <SubmitButton type="submit">OK</SubmitButton>
           </form>
           <p>Our terms</p>
           {/* style="color: grey; cursor: pointer;" */}
         </FooterDiv>
-      </div>
+      </Outer>
       <ScrollUp as="a" href="#header">
         {/* (click)="directToTop()" */}
         <h1>Back to top!</h1>

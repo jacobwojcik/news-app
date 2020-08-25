@@ -4,7 +4,8 @@ export const StyledArticle = styled.div`
   width: 400px;
   margin: 20px 10px;
   border: 1px solid ${({ theme }) => theme.colors.dark};
-  height: 600px;
+  min-height: 600px;
+  height: auto;
   background-color: white;
   transition: 200ms;
   padding: 1em;
@@ -25,6 +26,10 @@ export const StyledArticle = styled.div`
   }
   p:last-of-type {
     text-align: center;
+  }
+  ${({ theme }) => theme.media.phone} {
+    width: 100%;
+    margin: 10px 0;
   }
 `;
 export const ReadMoreButton = styled.button`

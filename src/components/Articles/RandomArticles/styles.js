@@ -11,6 +11,9 @@ export const SelectForm = styled.form`
   width: 80%;
   height: 200px;
   text-align: center;
+  ${({ theme }) => theme.media.phone} {
+    width: 100%;
+  }
   select {
     padding: 0.5em;
     margin: 1em 0;
@@ -20,6 +23,9 @@ export const SelectForm = styled.form`
     border: none;
     border-bottom: 2px solid ${({ theme }) => theme.colors.black};
     background-color: transparent;
+    ${({ theme }) => theme.media.phone} {
+      width: 70%;
+    }
   }
   button {
     margin: 1em 0;
@@ -33,6 +39,9 @@ export const SelectForm = styled.form`
     border-bottom: 2px solid ${({ theme }) => theme.colors.black};
     :hover {
       opacity: 0.8;
+    }
+    ${({ theme }) => theme.media.phone} {
+      width: 30%;
     }
   }
 `;

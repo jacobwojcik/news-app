@@ -14,8 +14,6 @@ const RandomArticles = () => {
     )
       .then((res) => res.json())
       .then((receivedData) => setNews(receivedData["articles"]));
-
-    console.log(news);
   };
 
   const handleChangeType = (e) => {
