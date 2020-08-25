@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/news-app/static/js/main.8a09dd1f.chunk.js",
-    "main.js.map": "/news-app/static/js/main.8a09dd1f.chunk.js.map",
+    "main.js": "/news-app/static/js/main.14d0960b.chunk.js",
+    "main.js.map": "/news-app/static/js/main.14d0960b.chunk.js.map",
     "runtime-main.js": "/news-app/static/js/runtime-main.255a7a0a.js",
     "runtime-main.js.map": "/news-app/static/js/runtime-main.255a7a0a.js.map",
     "static/js/2.cc750a0f.chunk.js": "/news-app/static/js/2.cc750a0f.chunk.js",
     "static/js/2.cc750a0f.chunk.js.map": "/news-app/static/js/2.cc750a0f.chunk.js.map",
     "index.html": "/news-app/index.html",
-    "precache-manifest.bff88e7bac05b1f94c8de956cfe52576.js": "/news-app/precache-manifest.bff88e7bac05b1f94c8de956cfe52576.js",
+    "precache-manifest.148ac1ebd8f090f5c566e28c62f80fbb.js": "/news-app/precache-manifest.148ac1ebd8f090f5c566e28c62f80fbb.js",
     "service-worker.js": "/news-app/service-worker.js",
     "static/js/2.cc750a0f.chunk.js.LICENSE.txt": "/news-app/static/js/2.cc750a0f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.255a7a0a.js",
     "static/js/2.cc750a0f.chunk.js",
-    "static/js/main.8a09dd1f.chunk.js"
+    "static/js/main.14d0960b.chunk.js"
   ]
 }
