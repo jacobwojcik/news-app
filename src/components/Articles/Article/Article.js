@@ -6,7 +6,7 @@ const Article = ({ title, author, urlToImage, description, url }) => {
       <h1>{title}</h1>
       <img src={urlToImage} alt="Pics not found :(" />
       <p>{description}</p>
-      <p>Author: {author}</p>
+      {author && <p>Source: {author}</p>}
       <ReadMoreButton as="a" href={url} target="_blank">
         Read more
       </ReadMoreButton>

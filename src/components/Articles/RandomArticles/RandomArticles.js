@@ -4,13 +4,13 @@ import { RandomSection, SelectForm } from "./styles";
 import { ListOfArticles } from "../../../utils/reuse/styles";
 const RandomArticles = () => {
   const [news, setNews] = useState({
-    newsType: "Business",
+    newsType: "",
     articles: [],
   });
 
   const loadData = async () => {
     await fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&pageSize=3&category=${news.newsType}&apiKey=2fbcc91b204d434fb09c1ed52893aaa0`
+      `https://saurav.tech/NewsAPI/top-headlines/category/${news.newsType}/gb.json`
     )
       .then((res) => res.json())
       .then((receivedData) => setNews(receivedData["articles"]));
@@ -19,14 +19,13 @@ const RandomArticles = () => {
   };
 
   const handleChangeType = (e) => {
-    setNews({ ...news, newsType: e.target.value });
+    setNews({ ...news, newsType: e.target.value.toLowerCase() });
   };
   return (
     <RandomSection>
       <SelectForm>
         <h1>Select category of your 3 news</h1>
-        <select value={news.newsType} onChange={handleChangeType}>
-          <option>Business</option>
+        <select onChange={handleChangeType}>
           <option>Entertainment</option>
           <option>General</option>
           <option>Health</option>
@@ -45,17 +44,19 @@ const RandomArticles = () => {
       </SelectForm>
       <ListOfArticles>
         {news.length > 0 &&
-          news.map(({ title, author, urlToImage, description, url }) => (
-            <li>
-              <Article
-                title={title}
-                author={author}
-                urlToImage={urlToImage}
-                description={description}
-                url={url}
-              />
-            </li>
-          ))}
+          news
+            .slice(0, 3)
+            .map(({ title, author, urlToImage, description, url }) => (
+              <li key={title}>
+                <Article
+                  title={title}
+                  author={author}
+                  urlToImage={urlToImage}
+                  description={description}
+                  url={url}
+                />
+              </li>
+            ))}
       </ListOfArticles>
     </RandomSection>
   );
